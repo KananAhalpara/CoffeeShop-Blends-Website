@@ -1,0 +1,484 @@
+/* row control */
+
+/* Perishable Clearfix: use on any parent with floating children */
+.clearfix:after,
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix,
+* html .row             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix,
+*:first-child+html .row { zoom: 1; } /* IE7 */
+
+/* Perishable Clearfix: close */
+
+
+/*--------------- Basic css -------------------------*/
+*{
+  text-align: justify;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Julius Sans One', sans-serif;
+  color: #000;
+}
+
+body p{
+  font-family: 'Raleway', sans-serif;
+  color:#fff;
+  font-size: 1.2em;
+}
+
+.line{
+  width: 67px;
+  height: 6.97px;
+  background-color: #5d4a43;
+}
+
+.text-white{
+  color: white;
+}
+
+.text-black{
+  color:#000;
+}
+
+.text-brown{
+  color: #5d4a43;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.bg-brown{
+  background-color: #5d4a43;
+}
+
+.bg-light-brown{
+  background-color: #a39393;
+}
+
+.bg-light-blue{
+  background-color: #92cccc;
+}
+
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+.text-center{
+  text-align: center;
+}
+.wrapper{
+padding-left: 50px;
+padding-right:  50px;
+}
+.tb-wrapper{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.col {
+  text-align: center;
+}
+
+.clear{clear: both;}
+
+img{
+  width: auto;
+}
+
+.justify{
+  text-align: justify;
+}
+.bg-black{
+  background-color: #000;
+}
+
+.font-white{
+  color: #fff;
+}
+
+.font-black{
+  color: #000;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.button{
+  background-color:#92cccc;
+  color:#fff;
+  padding: 1em 4em ;
+  letter-spacing: 4px;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+ .button:hover,
+ .button:active{
+  color:#fff;
+  background-color: #000;
+  border-radius: 50px;
+}
+
+
+/* ---------------------- navigation -------------------------*/
+.logo{
+  height: 99px;
+  width: auto;
+  margin:0;
+  padding: 0;
+}
+
+.logo-img{
+  width: auto;
+  height: 105px;
+  margin: 0;
+  padding : 0;
+}
+.navigation{
+	width: 100%;
+	background-color:hsla(0, 0%, 0%, 0.7);
+	color: #fff;
+	height: 550px;
+}
+
+.navigation-image{
+	background-color: #000;
+	background-image: url("../images/coffee.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	z-index: 9999;
+}
+
+.navigation-image-mobile{
+  background-color: #000;
+  background-image: url("../images/coffee-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 9999;
+}
+
+
+.topnav {
+  width: 100%;
+  background-color:hsla(0, 0%, 0%, 0.8);
+  position: fixed;
+  z-index: 99999;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 0px 60px #000;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 40px 4em 10px 4em;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.topnav a:hover {
+  color: #92cccc;
+  font-weight: bold;
+}
+
+.active {
+  background-color: #000;
+  color: #1a87f8;
+}
+
+.topnav .icon {
+  display: none;
+  font-size: 36px;
+}
+
+/* ---------------------- heading -------------------------*/
+.heading{
+	padding-top:600px;
+}
+.header-text{
+  padding-top: 200px;
+  width: 50%;
+}
+.header-text p{
+  font-family: 'Raleway', sans-serif;
+}
+
+/*-------------------------------------------------------- Section-1 RECIPROCITY ----------------------------------------------------------------*/
+.reciprocity-background{
+  background-image: url("../images/reciprocity-background.png");
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  z-index: 999;
+}
+
+.reciprocity-bg-mobile{
+    height: 200px;
+  background-color: #92cccc;
+}
+
+.products-img{
+  height: 50px;
+  width: auto;
+}
+
+
+/*-------------------------------------------------------- Section-3 ABOUT ----------------------------------------------------------------*/
+
+.about{
+  background-image: url(../images/about-photo.png);
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  z-index: 999;
+}
+
+.about-text{
+  width: 60%;
+}
+
+.about-mobile{
+  background-color: #a39393;
+  height: auto;
+}
+/* ----------------- box-shadow -------------------*/
+.box-shadow{
+	box-shadow: 0px 0px 60px #e7e7e7;
+	border-radius: 5px;
+	margin: 40px;
+}
+
+
+/*------------------------------------------ section-2-4 GRIDS WITH IMAGES----------------------------------*/
+.work{
+  background-color: #fff;
+  color: #000;
+  height: auto;
+}
+
+.img-boxshadow{
+  box-shadow: 0 0 60px #e7e7e7;
+}
+.work img{
+  height: 300px;
+  width: auto;
+}
+
+/*overlay effect refrence w3-school */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.contain:hover .overlay {
+  height: 100%;
+  width: 95%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+/*-------------------------------------------------------- Section-5 REVIEWS ----------------------------------------------------------------*/
+
+.review{
+  background-image: url(../images/reviews-photo.png);
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 490px;
+  z-index: 999;
+}
+
+.review-text{
+  width: 40%;
+}
+
+.review-mobile{
+  background-color: #a39393;
+  height: auto;
+}
+
+.fa-star{
+  font-size: 1.3em;
+}
+
+.checked {
+    color: #fff200;
+
+}
+
+/*------------------------------------------ section-6 CONTACT  ----------------------------------*/
+.contact{
+	background-color: #000;
+	color: #fff;
+	position: relative;
+}
+
+.contact h1{
+	color: #fff;
+}
+
+.contact p{
+  text-align: center;
+}
+
+.social-icon{
+  font-size: 36px;
+  -webkit-transition: font-size 0.2s; /* For Safari 3.1 to 6.0 */
+  transition: font-size 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.social-icon:hover{
+	font-size: 45px;
+}
+
+.fa-chevron-circle-up{
+  font-size: 60px;
+  float: right;
+  margin:0 50px;
+}
+
+@keyframes gototop {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.gototop{
+  animation-name: gototop;
+  transform-origin: center bottom;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+
+/*------------------------- section-6 contact form css refrence-w3shool ------------------------------------------*/
+form{
+  font-family: 'Raleway', sans-serif;
+  color:#000;
+  font-size: 1.2em;
+}
+label{
+  font-family: 'Raleway', sans-serif;
+  color:#fff;
+  font-size: 1.2em;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #92cccc;
+    color: white;
+    padding: 12px 4em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #000;
+}
+
+
+/*------------------------------------------ section-8 FOOTER  ----------------------------------*/
+
+footer{
+	color: #fff;
+	background-color: #000;
+	clear: both;
+	text-align: center;
+}
+footer p{
+  text-align: center;
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  text-align: justify;
+}
+
